@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Front End Tests</title>
+    <link type="text/stylesheet" rel="stylesheet" href="node_modules/mocha/mocha.css"/>
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="public/javascripts/materialize.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="public/javascripts/app.js"></script>
+    <script src="node_modules/mocha/mocha.js"></script>
+    <script src="node_modules/chai/chai.js"></script>
+    <script>mocha.setup('bdd')</script>
+    <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+    <!-- include tests here -->
+    <script src="test/front-end/othelloTest.js"></script>
+    <script>
+      mocha.checkLeaks();
+      mocha.globals(['jQuery', 'angular', 'validate_field', 'showStaggeredList', 'fadeInImage']);
+      mocha.run();
+    </script>
+  </body>
+</html>

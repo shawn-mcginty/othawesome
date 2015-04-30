@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='icon', type='image/ico', href='/images/favicon.ico')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/othello.css')
+    title= 'Codouken | ' + title
+  body
+    header
+      nav(role='navigation')
+        .nav-wrapper
+          a(id='logo-container', href='#', class='brand-logo')
+            |Oops..
+    main
+      .container
+        h4
+          i(class='mdi-alert-error')
+          |&nbsp;
+          |Error..
+        p
+          | Whatever you were trying to do has failed or is broken.  If you were clicking on a valid link or trying to use 
+          | a part of the site that should actually be operational pleas send me an email and let me know about it.
+        p
+          a(href='mailto:shawn@codouken.com', target='_blank')='shawn@codouken.com'
+        blockquote
+          |If you were trying to do something that isn't valid to begin with.. better luck next time.
+    script(type='text/javascript', src='/javascripts/jquery.min.js')
+    script(type='text/javascript', src='/javascripts/materialize.min.js')
+    script(type='text/javascript', src='/javascripts/rx.all.js')
+    script(type='text/javascript', src='/javascripts/angular.js')
